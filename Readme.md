@@ -58,7 +58,7 @@ docker-compose run --rm web python manage.py createsuperuser
 ```
 ```
 Username (leave blank to use 'root'): admin
-Email address: example@sendcloud.com
+Email address: example@abc.com
 Password: 
 Password (again): 
 Bypass password validation and create user anyway? [y/N]: y
@@ -113,7 +113,7 @@ curl -XGET http://0.0.0.0:8080/v1/feeds/${FEED_UUID} -H 'Authorization: Token c0
 
 ##### Update a RSS feed
 ```
-curl -XPUT http://0.0.0.0:8080/v1/feeds/${FEED_UUID} -H 'Authorization: Token c028e484e879c23493cf9028093fee857e0c59bc' -d '{"name": "SendCloud - Test", "is_active": false}'
+curl -XPUT http://0.0.0.0:8080/v1/feeds/${FEED_UUID} -H 'Authorization: Token c028e484e879c23493cf9028093fee857e0c59bc' -d '{"name": "ABC - Test", "is_active": false}'
 ```
 
 ##### Delete a RSS feed
